@@ -21,10 +21,10 @@ const SubTotalContainer = connect(
 		}else{
 			// Applied False
 		}
-		console.log("total woith offer applied " +  total);
     return {
-    	totalValue: total,
-    	discountValue: discount
+    	totalValue: total.toFixed(2),
+    	nonDiscountedTotal: total + discount,
+    	discountValue: discount.toFixed(2)
     };
 	},
 

@@ -157,9 +157,17 @@ time, mark, audio, video {
   clear: both;
 }
 /*Sub Total left*/
+.subtotal{
+  padding: 50px 0;
+  color: grey;
+}
+.subtotal-left p{
+  margin: 20px 0;
+}
 .subtotal-left{
   float: left;
   width: 30%;
+  padding-right:40px;
 }
 .subtotal-right{
   float: right;
@@ -172,6 +180,71 @@ time, mark, audio, video {
   padding: 20px 0;
   border-bottom: 4px solid #ddd;
   margin-bottom: 20px;
+}
+
+.subtotal-right label.offer-text {
+  width: 30%;
+  display: block;
+  float: left;
+}
+.subtotal-right .offer-section{
+  width: 70%;
+  float: right;
+  padding-left: 136px;
+}
+.subtotal-right .offer-section input{
+  height: 35px;
+  margin-right: 5px;
+}
+
+.subtotal-right ul li {
+  list-style: none;
+  float: left;
+  width: 100%;
+  padding: 25px 0;
+}
+.subtotal-right ul li span.text {
+  float: left;
+}
+
+.subtotal-right ul li span.value {
+  float: right;
+}
+.main-subtotal{
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+.text-span{
+  font-size: 13px;
+  color: #ccc;
+}
+.underline a{
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/*model styling*/
+
+.model-left{
+  float: left;
+  color: grey;
+  font-size: 16px;
+  text-align: center;
+}
+.model-right{
+  float: right;
+}
+
+.model-left p{
+  padding: 15px 0;
+}
+
+.model-left input{
+  height: 36px;
+  width: 60px;
+}
+.model-left .product-name {
+   border-top: 4px solid #ddd;
 }
 @media screen and (max-width : 600px) {
 
@@ -234,6 +307,24 @@ time, mark, audio, video {
   }
   .size-text{
     display: inline-block;
+  }
+  /* sub total section style */
+  .subtotal-left{
+    display: none;
+  }
+  .subtotal-right{
+    width: 100%;
+  }
+
+  .subtotal-right .offer-section {
+    float: none;
+    padding: 20px  0;
+    margin: 0 auto;
+  }
+  .subtotal-right label.offer-text {
+    float: none;
+    margin-left: 110px;
+    width: 165px;
   }
 
 }

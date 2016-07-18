@@ -28,7 +28,7 @@ export default class CartItem extends Component {
           <div className="content-section">
           <div className="item-section default-border-bottom">
             <div className="left-section" >
-              <img src="../images/T1.jpg" alt=""/>
+              <img src={"../images/" + item.get('p_img') + ".jpg"} alt=""/>
             </div>
             <div className="right-top">
               <div className="section product-description margin-right275">

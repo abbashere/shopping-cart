@@ -50,14 +50,14 @@ export default class ModalBox extends Component {
           </Modal.Header>
           <Modal.Body>
             <div className="model-left">
-              <p>{this.props.itemToEdit.get("p_name")}</p>
+              <p className="product-name">{this.props.itemToEdit.get("p_name")}</p>
               <p>{this.props.itemToEdit.get("p_price")}</p>
               <input name='updatedValue' type='text' value={this.state.itemQuantityValue} onChange={this._onChange} />
             </div>
             <div className="model-right">
-                right content
+                <img src={"../images/" + this.props.itemToEdit.get('p_img') + ".jpg"} alt=""/>
             </div>
-
+            <div className="clear"></div>
           </Modal.Body>
           <Modal.Footer>
           	<Button onClick={this._onSaveClick}>Save</Button>

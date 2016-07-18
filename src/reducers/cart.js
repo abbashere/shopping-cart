@@ -3,9 +3,10 @@ import Immutable, { Map } from 'immutable';
 const dummy = Immutable.fromJS({
   "productsInCart": [{
       "p_id": "1",
-      "p_name": "Cotton tshirt",
+      "p_name": "Cotton Tshirt",
       "p_variation": "solid green",
-      "p_style": "ms13kt1906",
+      "p_style": "MS13KT1906",
+      "p_img":"T1",
       "p_quantity": "1",
       "p_originalprice": "11.0",
       "p_price": "11.0",
@@ -48,7 +49,8 @@ const dummy = Immutable.fromJS({
       "p_id": "2",
       "p_name": "Cotton pant",
       "p_variation": "solid green",
-      "p_style": "ms13kt1906",
+      "p_style": "MS13KT1906",
+      "p_img":"T2",
       "p_quantity": "1",
       "p_originalprice": "11.0",
       "p_price": "22.0",
