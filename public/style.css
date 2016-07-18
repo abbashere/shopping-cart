@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Arial;
+}
+
+/* header */
+.header {
+  width: 100%;
+  float: left;
+  padding:10px 0;
+  border-top: 2px solid #ccc;
+  margin-top: 25px;
+  color: grey;
+}
+.header .items{
+  width: 71%;
+}
+.header .size{
+  width: 5%;
+}
+.header .qty{
+  width: 10%;
+  text-align: center;
+}
+.header .price{
+  width: 9%;
+  text-align: center;
+}
+.header div {
+  float: left;
+}
+
+/* Top header*/
+.top-header {
+  padding:15px 0;
+}
+
+.top-header h4{
+  font-size: 33px;
+  color: #888;
+}
+/* cart style */
+
+.container{
+  width: 850px;
+  margin: 0 auto;
+}
+
+.content-section {
+  border-top: 4px solid #ccc;
+  border-bottom: 4px solid #ccc;
+  float: left;
+}
+
+.left-section {
+  float: left;
+  width: 25%;
+}
+.right-top{
+  float: left;
+  width: 75%;
+
+}
+.right-bottom{
+  float: left;
+  width: 75%;
+  margin-top: 60px;
+}
+.section {
+  float: left;
+  color: grey;
+}
+
+.right-bottom .action .pipe{
+  margin: 0px 15px;
+}
+.right-bottom .action  a{
+  color: grey;
+  text-decoration: none;
+}
+.right-bottom .action  a:hover{
+  text-decoration: underline;
+}
+
+.product-description h4{
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px 0px;
+}
+.product-description p{
+  font-size: 12px;
+  font-weight: normal;
+  padding: 3px 0px;
+}
+.right-top .section {
+ padding: 5px;
+}
+.right-top .section input{
+ width: 40px;
+ text-align: center;;
+}
+.margin-right275{
+  margin-right: 275px;
+}
+.margin-right30{
+  margin-right: 30px;
+}
+.label-qty{
+  display: none;;
+}
+
+.default-border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+.dark-border-top {
+  border: 3px solid #ddd;
+}
+.dark-border-bottom {
+  border: 3px solid #ddd;
+}
+.item-section.default-border-bottom{
+  padding: 50px 0;
+}
+.product-description-text{
+  color: grey;
+}
+.size-text{
+  display: none;
+}
+.price{
+  font-size: 20px;
+}
+.clear{
+  clear: both;
+}
+/*Sub Total left*/
+.subtotal-left{
+  float: left;
+  width: 30%;
+}
+.subtotal-right{
+  float: right;
+  width: 70%;
+  border-bottom: 4px solid #ddd;
+  padding-bottom: 20px;
+}
+.subtotal-right .button-section{
+  display: block;
+  padding: 20px 0;
+  border-bottom: 4px solid #ddd;
+  margin-bottom: 20px;
+}
+@media screen and (max-width : 600px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .top-header h4{
+    font-size: 24px;
+  }
+
+  .right-top{
+    float: left;
+    width: 64%;
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+
+  .left-section {
+    float: left;
+    width: 36%;
+    margin-top: 18px;
+  }
+
+  .right-top .section {
+    display: block;
+    float: none;
+    font-size: 12px;
+  }
+
+  .right-bottom {
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .section.product-description{
+    margin: 0 !important;
+  }
+
+  .label-qty {
+    display: inline;
+    font-size: 15px;
+    margin: 20px 0;
+
+  }
+  .price{
+  font-size: 20px !important;
+  padding-left: 27px !important;
+}
+  .header{
+    display: none;
+  }
+
+  .item-section {
+    padding:25px  20px 0 !important;
+  }
+  .item-section.default-border-bottom{
+    padding: 0;
+  }
+  .size-text{
+    display: inline-block;
+  }
+
+}
+
+/* bootstrap popup*/
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+
+
+
